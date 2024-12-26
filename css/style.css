@@ -134,4 +134,9 @@ footer a {
     span {
         padding-bottom: 1rem;
     }
+
+    .container-fluid {
+        height: auto;
+        min-height: 100vh;
+    }
 }
