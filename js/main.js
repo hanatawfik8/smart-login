@@ -51,3 +51,8 @@ function addToLocalStorage() {
     localStorage.setItem('accounts', JSON.stringify(accounts))
 }
 
+function getFromLocalStorage() {
+    return JSON.parse(localStorage.getItem('accounts'))
+}
+
+console.log(getFromLocalStorage())
