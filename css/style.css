@@ -9,6 +9,7 @@
     --link-color: red;
     --icon-color: #55585B;
     --secondary-bg-color: white;
+    --footer-link-color: #F0E68C;
     --main-font-family: "Poppins", serif;
 }
 
@@ -72,11 +73,14 @@ span {
 }
 
 span a {
-    text-decoration: none;
     color: var(--link-color);
 }
 
-span a:hover {
+a {
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: underline;
 }
 
@@ -100,6 +104,21 @@ i {
     cursor: pointer;
     color: var(--icon-color);
 }
+
+footer {
+    background-color: var(--btn-bg-color);
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+    color: var(--main-bg-color);
+}
+
+footer a {
+    color: var(--footer-link-color);
+}
+
 
 @media screen and (max-width:580px) {
     .card {
