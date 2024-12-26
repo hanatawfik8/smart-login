@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --main-bg-color: #f0f0f0;
@@ -11,6 +11,7 @@
     --secondary-bg-color: white;
     --footer-link-color: #F0E68C;
     --main-font-family: "Poppins", serif;
+    --site-name-font-family: "Lobster", serif;
 }
 
 body {
@@ -119,6 +120,37 @@ footer a {
     color: var(--footer-link-color);
 }
 
+nav {
+    background-color: var(--btn-bg-color);
+}
+
+.navbar-brand {
+    color: var(--main-bg-color);
+    font-family: var(--site-name-font-family);
+    font-size: 1.75rem;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    color: var(--main-bg-color);
+}
+
+.home {
+    height: calc(100vh - 84px);
+}
+
+.logout {
+    color: var(--footer-link-color);
+    background-color: var(--btn-bg-color);
+    border: 1px solid var(--footer-link-color);
+    transition: 0.3s all ease-in;
+}
+
+.logout:hover {
+    background-color: var(--footer-link-color);
+    color: #212529;
+}
+
 
 @media screen and (max-width:580px) {
     .card {
@@ -138,5 +170,21 @@ footer a {
     .container-fluid {
         height: auto;
         min-height: 100vh;
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .logout {
+        font-size: 0.8rem;
+    }
+
+    .home {
+        height: calc(100vh - 73.19px);
+    }
+
+    .welcome {
+        font-size: 1.5rem;
     }
 }
